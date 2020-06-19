@@ -1,0 +1,66 @@
+@gris_1: #F2F2F2;
+@blnaco: #ffffff;
+html,body{
+    height: 100%;
+    background-color: @gris_1;
+}
+#login{
+    background-color: @blnaco;
+    font-family: 'Lato', 'Roboto', sans-serif;
+    #form-login{
+        padding: 5%;
+    }
+    #estampa{
+        padding: 15%;
+        background-color: #000;
+        background: url(../img/login_example_size.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#dashboard-card{
+    background-color: #539CCE;
+    color: #5b5e64;
+    a{
+        color: #5b5e64;
+    }
+    .cover-general{
+        width: 100%;
+        padding: 1%;
+        #lado-izquierdo{
+            background-color: #ffffff;
+            opacity: 0.5;
+            padding: 20px;
+            height: 96vh;
+        }
+        #lado-derecho{
+            background-color: #ffffff;
+            opacity: 0.6;
+            padding: 20px;
+        }
+        #menu-izquierdo{
+            ul{
+                padding-left: 10%;
+               li{
+                padding: 10px;
+                    a{
+                        text-decoration: none;
+                        &:hover{
+                            color: #00dd00;
+                        }
+                        i{
+                            padding-right: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #form-login{
+        padding: 15% !important;
+    }
+}
